@@ -15,6 +15,56 @@
 
 $$f(t) = t^2,\; -\pi \leq t \leq \pi$$
 
+\textbf{R/} Se plantea la serie de fourier de la siguiente manera:
+
+$$f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty\left(a_n\,cos(n\omega_0t) + b_n\,sin(n\omega_0t)\right)$$
+
+Por lo que los coeficientes $a_x$ se pueden definir de la siguiente forma:
+\begin{eqnarray*}
+a_0 &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)dt\\
+a_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)cos(n\omega_0t)dt\\
+b_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)sin(n\omega_0t)dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2dt\\
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2cos(n\,t)dt\\
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2sin(n\,t)dt
+\end{eqnarray*}
+
+Resolviendo para $a_0$:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2dt\\
+&=& \frac{1}{\pi} \frac{t^3}{3}\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{1}{3\pi} (\pi^3 - (-\pi)^3)\\
+&=& \frac{2}{3}\pi^2
+\end{eqnarray*}
+
+Resolviendo para $a_n$:
+\begin{eqnarray*}
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2cos(n\,t)dt\\
+&=& \frac{1}{\pi} \left(\frac{t^2sin(n\,t)}{n} + \frac{2t\,cos(n\,t)}{n^2} - \frac{2\,sin(n\,t)}{n^3}\right)\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{\pi^2sin(n\,\pi)}{n\pi} + \frac{2\pi\,cos(n\,\pi)}{n^2\pi} - \frac{2\,sin(n\,\pi)}{n^3\pi}\\
+& &- \frac{\pi^2sin(n(-\pi))}{n\pi} + \frac{2\pi\,cos(n(-\pi))}{n^2\pi} + \frac{2\,sin(n(-\pi))}{n^3\pi}\\
+&=& 2\pi^2 sinc(n\,\pi) + \frac{4\pi}{n}cosc(n\,\pi) - \frac{4}{n^2}sinc(n\,\pi)
+\end{eqnarray*}
+
+Resolviendo para $b_n$:
+\begin{eqnarray*}
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t^2sin(n\,t)dt\\
+&=& \frac{1}{\pi} \left(-\frac{t^2cos(n\,t)}{n} - \frac{2t\,sin(n\,t)}{n^2} + \frac{2\,cos(n\,t)}{n^3}\right)\bigg|_{t=-\pi}^{\pi}\\
+&=& -\frac{\pi^2cos(n\,\pi)}{n\pi} - \frac{2\pi\,sin(n\,\pi)}{n^2\pi} + \frac{2\,cos(n\,\pi)}{n^3\pi}\\
+& &+ \frac{\pi^2cos(n(-\pi))}{n\pi} - \frac{2\pi\,sin(n(-\pi))}{n^2\pi} - \frac{2\,cos(n(-\pi))}{n^3\pi}\\
+&=& 0
+\end{eqnarray*}
+
+De manera que la serie de Fourier de $f(t)$ queda de la siguiente forma:
+\begin{eqnarray*}
+f(t) &=& \frac{\pi^2}{3} + \sum_{n=1}^\infty\left(a_n\,cos(n\,t)\right)\\
+a_n &=& \left(2\pi^2  - \frac{4}{n^2} \right) sinc(n\,\pi) + \frac{4\pi}{n}cosc(n\,\pi)
+\end{eqnarray*}
+
 \textbf{2. Desarrollar en series de Fourier}
 
 $$f(t) = t \, sin(t),\; -\pi \leq t \leq \pi$$
@@ -37,12 +87,4 @@ t, &0 \leq t \leq \pi
 \textbf{b)} $f(t) = sin(t) + \frac{1}{3}sin(3t) + \frac{1}{5}sin(5t)$
 
 \textbf{c)} $f(t) = cos(10t) + cos((10+\pi)t)$
-
-\textbf{6. Definición del proyecto}
-
-\textit{Estado del arte}
-
-\textit{Desarrollo}
-
-
 \end{document}
