@@ -127,9 +127,46 @@ t, &0 \leq t \leq \pi
 
 \textbf{5. Hallar el periodo}
 
-\textbf{a)} $f(t) = sin(\frac{2\pi}{b-a})t$
+\textbf{a)} $f(t) = sin(\frac{2\pi}{b-a}t)$
+
+\textbf{R/} El periodo $T$ de una señal senoidal se puede definir como:
+
+$$f(t) = sin\left(\frac{2\pi}{T}t\right)$$
+
+Por lo que para resolver la igualdad:
+
+$$T = (b - a)$$
 
 \textbf{b)} $f(t) = sin(t) + \frac{1}{3}sin(3t) + \frac{1}{5}sin(5t)$
+
+\textbf{R/} El periodo $T$ de una señal senoidal se puede definir como:
+
+$$f(t) = sin\left(\frac{2\pi}{T}t\right)$$
+
+Por lo que para cada senoidal su periodo sería:
+
+\begin{eqnarray*}
+T_1 &=& 2\pi\\
+T_2 &=& \frac{2\pi}{3}\\
+T_3 &=& \frac{2\pi}{5}
+\end{eqnarray*}
+
+Dado el hecho de que la señal es una señal compuesta, será periodica si el cociente entre sus periodos es un número racional:
+
+\begin{eqnarray*}
+\frac{T_1}{T_2} &=& 3\\
+\frac{T_1}{T_2} &=& 5\\
+\frac{T_2}{T_3} &=& \frac{5}{3}
+\end{eqnarray*}
+
+Dado el hecho de que se cumple la condición, la señal es periódica y su periodo será en minimo común múltiplo de estos periodos:
+
+\begin{eqnarray*}
+T &=& m.c.m(T_1,T_2,T_3)\\
+&=& m.c.m(2 \pi,2\pi3^{-1},2\pi5^{-1})\\
+&=& 2\pi3^{-1}5^{-1}\\
+T &=& \frac{2\pi}{15}
+\end{eqnarray*}
 
 \textbf{c)} $f(t) = cos(10t) + cos((10+\pi)t)$
 \end{document}
