@@ -73,6 +73,51 @@ $$f(t) = t \, sin(t),\; -\pi \leq t \leq \pi$$
 
 $$f(t) = t,\; -\pi \leq t \leq \pi$$
 
+\textbf{R/} Se plantea la serie de fourier de la siguiente manera:
+
+$$f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty\left(a_n\,cos(n\omega_0t) + b_n\,sin(n\omega_0t)\right)$$
+
+Por lo que los coeficientes $a_x$ se pueden definir de la siguiente forma:
+\begin{eqnarray*}
+a_0 &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)dt\\
+a_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)cos(n\omega_0t)dt\\
+b_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)sin(n\omega_0t)dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,dt\\
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,cos(n\,t)dt\\
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,sin(n\,t)dt
+\end{eqnarray*}
+
+Resolviendo para $a_0$:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,dt\\
+&=& \frac{1}{\pi} \frac{t^2}{2}\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{1}{2\pi} (\pi^2 - (-\pi)^2)\\
+&=& 0
+\end{eqnarray*}
+
+Resolviendo para $a_n$:
+\begin{eqnarray*}
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,cos(n\,t)dt\\
+&=& \frac{1}{\pi} \left(\frac{t\,sin(n\,t)}{n} + \frac{cos(n\,t)}{n^2}\right)\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{\pi\,sin(n\,\pi)}{n\pi} + \frac{cos(n\,\pi)}{n^2\pi} - \frac{(-\pi)sin(n(-\pi))}{n\pi} - \frac{cos(n(-\pi))}{n^2\pi}\\
+&=& 0
+\end{eqnarray*}
+
+Resolviendo para $b_n$:
+\begin{eqnarray*}
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,sin(n\,t)dt\\
+&=& \frac{1}{\pi} \left(-\frac{t\,cos(n\,t)}{n} + \frac{sin(n\,t)}{n^2}\right)\bigg|_{t=-\pi}^{\pi}\\
+&=& -\frac{\pi\,cos(n\,\pi)}{n\pi} + \frac{sin(n\,\pi)}{n^2\pi} + \frac{(-\pi)cos(n(-\pi))}{n\pi} - \frac{sin(n(-\pi))}{n^2\pi}\\
+&=& \frac{2}{n}sinc(n\,\pi) -2\pi\,cosc(n\,\pi)
+\end{eqnarray*}
+
+De manera que la serie de Fourier de $f(t)$ queda de la siguiente forma:
+$$f(t) = \sum_{n=1}^\infty\left(\left(\frac{2}{n}sinc(n\,\pi) -2\pi\,cosc(n\,\pi)\right)sin(n\,t)\right)$$
+
 \textbf{4. Desarrollar en series de Fourier}
 
 $$f(t) = \begin{cases}
