@@ -5,6 +5,7 @@
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
+\usepackage{listings}
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
@@ -146,8 +147,58 @@ Para lograr esto se realizan varios experimentos, midiendo con frecuencia de 1 (
 \label{fig_al_8}
 \end{figure}
 
-\subsection{Grabar voz}
-TODO
+\subsection{Voz}
+En esta sección se realizan diferentes experimentos sobre la voz para poder observar aspectos como: su representación en frecuencia y en tiempo. La interfaz gráfica desarrollada para este fin se puede observar en la figura \ref{voz_1} . 
+
+\subsubsection{Grabar voz}
+
+Para grabar la voz se utiliza recordblocking a la cual se le asigna un audiorecorder como se muestra en el Código \ref{matlab_voice} , en el cual se pueden establecer los parámetros de grabación como: frecuencia, canal (mono o estéreo) y bits. La grabación se realiza por 5 segundos.
+
+\begin{lstlisting}[caption={Grabar voz},label={matlab_voice},language=Matlab]
+recObj = audiorecorder;
+recordblocking(recObj, 5);
+\end{lstlisting}
+
+\subsubsection{Reproducir voz}
+
+Para reproducir la voz grabada, primero se debe obtener una la información del  audio con la función  getaudiodata(), y luego esta se pasa como argumento a sound() que es la encargada de reproducir los sonidos junto con la frecuencia a la que se quiere reproducir el audio, en este caso este valor se define en la interfaz gráfica. 
+
+\begin{lstlisting}[caption={Reproducir sonido},label={matlab_playsound},language=Matlab]
+	y = getaudiodata(recObj);    
+    sound(y, Fs);
+\end{lstlisting}
+
+\subsubsection{Reproducción inversa de la voz}
+
+Teniendo la grabación de la voz, se desea reproducir la misma de manera inversa, para este caso se utiliza la función flipud(), que se encarga de invertir el arreglo numérico que representa la voz.
+
+\subsubsection{Representación en tiempo y en frecuencia}
+
+Buscando tener una representación en frecuencia de la voz grabada, se debe aplicar primero la transformada de Fourier a la misma lo que se puede hacer en Matlab con la función fft como se ve el Código \ref{matlab_fft}, con ella obtenemos los componentes de frecuencia y a partir de se obtiene la gráfica. Esto se realiza para la grabación de voz normal y la invertida.
+
+\begin{lstlisting}[caption={Representación en frecuencia},label={matlab_fft},language=Matlab]
+	y3 = fft(y);
+	L = 5000;
+	P2 = abs(y3/L);
+	P1 = P2(1:L/2+1);
+	P1(2:end-1) = 2*P1(2:end-1);
+	d_fs = Fs*(0:(L/2))/L;
+	plot(d_fs, P1)
+\end{lstlisting}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/voz_1.png}
+\caption{Interfaz gráfica para experimentos de voz}
+\label{voz_1}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/voz_2.png}
+\caption{Interfaz gráfica para experimentos de voz}
+\label{voz_2}
+\end{figure}
 
 \subsection{Escuchar colores}
 Se desea ser capaz de escuchar los colores. Para esto se construye una sinusoide con una frecuencia igual a la del color que se desea escuchar. Los colores con su respectiva frecuencia se pueden ver en el Cuadro~\ref{table_color} \cite{bohren}.
