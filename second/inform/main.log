@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 MAR 2016 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2016 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,67 +422,75 @@ Overfull \hbox (25.41634pt too wide) in alignment at lines 54--60
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Overfull \hbox (54.40955pt too wide) in alignment at lines 103--108
- [][][] []
+] <imgs/sqrt.png, id=16, 674.52pt x 607.26875pt>
+File: imgs/sqrt.png Graphic file (type png)
+ <use imgs/sqrt.png>
+Package pdftex.def Info: imgs/sqrt.png used on input line 72.
+(pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
+
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 72--73
+ [][] 
  []
 
+[2 <./imgs/sqrt.png>] <imgs/lin.png, id=22, 674.52pt x 607.26875pt>
+File: imgs/lin.png Graphic file (type png)
+ <use imgs/lin.png>
+Package pdftex.def Info: imgs/lin.png used on input line 138.
+(pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (61.19312pt too wide) in alignment at lines 111--116
- [][][] []
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 138--139
+ [][] 
  []
 
-[2] <imgs/ba4_2.png, id=19, 674.52pt x 607.26875pt>
+<imgs/ba4_2.png, id=23, 674.52pt x 607.26875pt>
 File: imgs/ba4_2.png Graphic file (type png)
  <use imgs/ba4_2.png>
-Package pdftex.def Info: imgs/ba4_2.png used on input line 144.
+Package pdftex.def Info: imgs/ba4_2.png used on input line 168.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 144--145
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
-<imgs/ba5_2.png, id=21, 674.52pt x 607.26875pt>
+<imgs/ba5_2.png, id=24, 674.52pt x 607.26875pt>
 File: imgs/ba5_2.png Graphic file (type png)
  <use imgs/ba5_2.png>
-Package pdftex.def Info: imgs/ba5_2.png used on input line 151.
+Package pdftex.def Info: imgs/ba5_2.png used on input line 175.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 151--152
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
-<imgs/5b.png, id=22, 674.52pt x 607.26875pt>
+[3 <./imgs/lin.png> <./imgs/ba4_2.png>] <imgs/5b.png, id=30, 674.52pt x 607.26875pt>
 File: imgs/5b.png Graphic file (type png)
  <use imgs/5b.png>
-Package pdftex.def Info: imgs/5b.png used on input line 192.
+Package pdftex.def Info: imgs/5b.png used on input line 216.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 192--193
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 216--217
  [][] 
  []
 
-[3 <./imgs/ba4_2.png> <./imgs/ba5_2.png>] [4
-
- <./imgs/5b.png>] (./main.aux
+[4 <./imgs/ba5_2.png> <./imgs/5b.png>] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 3182 strings out of 493089
- 41476 string characters out of 6134842
- 119928 words of memory out of 5000000
- 6626 multiletter control sequences out of 15000+600000
+ 3195 strings out of 493089
+ 41665 string characters out of 6134842
+ 119944 words of memory out of 5000000
+ 6638 multiletter control sequences out of 15000+600000
  8111 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,30p,232b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (4 pages, 188276 bytes).
+Output written on main.pdf (4 pages, 243439 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

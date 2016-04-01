@@ -65,6 +65,17 @@ f(t) &=& \frac{\pi^2}{3} + \sum_{n=1}^\infty\left(a_n\,cos(n\,t)\right)\\
 a_n &=& \left(2\pi^2  - \frac{4}{n^2} \right) sinc(n\,\pi) + \frac{4\pi}{n}cosc(n\,\pi)
 \end{eqnarray*}
 
+Esta progresión puede verse en la Figura~\ref{fig_1}, en donde a medida que se agrega un término esta sumatoria se aproxima a la señal original (mostrada en azul).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/sqrt.png}
+\caption{Señal $f(t) = t^2$}
+\label{fig_1}
+\end{figure}
+
+$\,$
+
 \textbf{2. Desarrollar en series de Fourier}
 
 $$f(t) = t \, sin(t),\; -\pi \leq t \leq \pi$$
@@ -103,7 +114,8 @@ Resolviendo para $a_n$:
 \begin{eqnarray*}
 a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,cos(n\,t)dt\\
 &=& \frac{1}{\pi} \left(\frac{t\,sin(n\,t)}{n} + \frac{cos(n\,t)}{n^2}\right)\bigg|_{t=-\pi}^{\pi}\\
-&=& \frac{\pi\,sin(n\,\pi)}{n\pi} + \frac{cos(n\,\pi)}{n^2\pi} - \frac{(-\pi)sin(n(-\pi))}{n\pi} - \frac{cos(n(-\pi))}{n^2\pi}\\
+&=& \frac{\pi\,sin(n\,\pi)}{n\pi} + \frac{cos(n\,\pi)}{n^2\pi}\\
+& &- \frac{(-\pi)sin(n(-\pi))}{n\pi} - \frac{cos(n(-\pi))}{n^2\pi}\\
 &=& 0
 \end{eqnarray*}
 
@@ -111,12 +123,24 @@ Resolviendo para $b_n$:
 \begin{eqnarray*}
 b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}t\,sin(n\,t)dt\\
 &=& \frac{1}{\pi} \left(-\frac{t\,cos(n\,t)}{n} + \frac{sin(n\,t)}{n^2}\right)\bigg|_{t=-\pi}^{\pi}\\
-&=& -\frac{\pi\,cos(n\,\pi)}{n\pi} + \frac{sin(n\,\pi)}{n^2\pi} + \frac{(-\pi)cos(n(-\pi))}{n\pi} - \frac{sin(n(-\pi))}{n^2\pi}\\
+&=& -\frac{\pi\,cos(n\,\pi)}{n\pi} + \frac{sin(n\,\pi)}{n^2\pi}\\
+& & + \frac{(-\pi)cos(n(-\pi))}{n\pi} - \frac{sin(n(-\pi))}{n^2\pi}\\
 &=& \frac{2}{n}sinc(n\,\pi) -2\pi\,cosc(n\,\pi)
 \end{eqnarray*}
 
 De manera que la serie de Fourier de $f(t)$ queda de la siguiente forma:
 $$f(t) = \sum_{n=1}^\infty\left(\left(\frac{2}{n}sinc(n\,\pi) -2\pi\,cosc(n\,\pi)\right)sin(n\,t)\right)$$
+
+Esta progresión puede verse en la Figura~\ref{fig_3}, en donde a medida que se agrega un término esta sumatoria se aproxima a la señal original (mostrada en azul).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/lin.png}
+\caption{Señal $f(t) = t$}
+\label{fig_3}
+\end{figure}
+
+$\,$
 
 \textbf{4. Desarrollar en series de Fourier}
 

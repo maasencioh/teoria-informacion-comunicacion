@@ -1,8 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1459127891 "main.tex" "main.pdf" "main" 1459127892
+["pdflatex"] 1459483359 "main.tex" "main.pdf" "main" 1459483360
   "./imgs/5b.png" 1459126753 46717 d0ba91c056a46304e1f69d90b3f2e9f9 ""
   "./imgs/ba4_2.png" 1459124860 48655 aa813222eb1beb69490310a7594d142b ""
   "./imgs/ba5_2.png" 1459124884 48775 0e34fc7ae1fbee10b1a72acbfb380498 ""
+  "./imgs/lin.png" 1459482599 52395 a9e0e8f0c4fd16ff8c4e8a832d14476d ""
+  "./imgs/sqrt.png" 1459482158 53408 a3d9e2b38947b2fc2952a643feed1a1b ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -70,9 +72,11 @@
   "imgs/5b.png" 1459126753 46717 d0ba91c056a46304e1f69d90b3f2e9f9 ""
   "imgs/ba4_2.png" 1459124860 48655 aa813222eb1beb69490310a7594d142b ""
   "imgs/ba5_2.png" 1459124884 48775 0e34fc7ae1fbee10b1a72acbfb380498 ""
-  "main.aux" 1459127892 931 81c03b928dabed861b7ef7590d0f5ec8 ""
-  "main.tex" 1459127887 6618 75c56c08388e04a8744e20b326cb874c ""
+  "imgs/lin.png" 1459482599 52395 a9e0e8f0c4fd16ff8c4e8a832d14476d ""
+  "imgs/sqrt.png" 1459482158 53408 a3d9e2b38947b2fc2952a643feed1a1b ""
+  "main.aux" 1459483360 1187 b4baf73d42eabbb3a37bbcc1c4071b9c ""
+  "main.tex" 1459483355 7240 2cae99e9301593300ff98c53181f44f3 ""
   (generated)
-  "main.aux"
   "main.pdf"
+  "main.aux"
   "main.log"

@@ -95,6 +95,12 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT main.pdf
 INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT imgs/sqrt.png
+INPUT ./imgs/sqrt.png
+INPUT ./imgs/sqrt.png
+INPUT imgs/lin.png
+INPUT ./imgs/lin.png
+INPUT ./imgs/lin.png
 INPUT imgs/ba4_2.png
 INPUT ./imgs/ba4_2.png
 INPUT ./imgs/ba4_2.png
