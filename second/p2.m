@@ -5,14 +5,14 @@ tmin = -3;
 tmax = 3;
 t = linspace(tmin, tmax, N);
 y = t.*sin(t);
-a= pi/2;
+a= 1 -(cos(t))/2;
 
 figure
 hold on
 plot(t,y,'b-','LineWidth',3);
 for n = 2:6
+    a = a + ((4*n*sin(pi*n)-2*pi *((n^2)-1)* cos(pi *n))/((((n^2)-1)^2) *pi)) * cos(n*t);
     plot(t,a,'k-');
-    a = a + ((4* sin(pi*n)-2*pi *((n^2)-1)* cos(pi *n))/((n^2)-1)^2) * cos(n*t);
 end
 
 title('Senal periodica');

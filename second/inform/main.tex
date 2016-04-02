@@ -6,7 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 
-\title{Primer trabajo teoría de la información y la comunicación}
+\title{Tarea 2}
 \author{Miguel~Angel~Asencio~Hurtado, Ana~María~Rodríguez~Reyes}
 
 \begin{document}
@@ -80,6 +80,67 @@ $\,$
 
 $$f(t) = t \, sin(t),\; -\pi \leq t \leq \pi$$
 
+
+\textbf{R/} Se plantea la serie de fourier de la siguiente manera:
+
+$$f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty\left(a_n\,cos(n\omega_0t) + b_n\,sin(n\omega_0t)\right)$$
+
+Por lo que los coeficientes $a_x$ se pueden definir de la siguiente forma:
+\begin{eqnarray*}
+a_0 &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)dt\\
+a_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)cos(n\omega_0t)dt\\
+b_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)sin(n\omega_0t)dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)dt\\
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)cos(n\,t)dt\\
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)sin(n\,t)dt
+\end{eqnarray*}
+
+Resolviendo para $a_0$:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)dt\\
+&=& \frac{1}{\pi} \bigg[ sin(t) -tcos(t)\bigg|_{t=-\pi}^{0} + sin(t) -tcos(t)\bigg|_{t=0}^{\pi} \bigg] \\
+&=& \frac{1}{\pi} [2\pi]\\
+&=& 2
+\end{eqnarray*}
+
+Resolviendo para $a_n$:
+\begin{eqnarray*}
+a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)cos(n\,t)dt\\
+&=& \frac{1}{\pi} \bigg(\frac{1}{2}\bigg(-\frac{sin((n-1)t)}{(n-1)^{2}} + \frac{sin((n+1)t)}{(n+1)^{2}}+ \\ 
+& & \frac{tcos((n-1)t)}{n-1} - \frac{tcos((n+1)t)}{n+1})\bigg)\bigg)\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{4nsin(\pi n)-2\pi(n^{2}-1)cos(\pi n))}{\pi(n^{2}- 1)^{2}}\\
+\end{eqnarray*}
+
+Resolviendo para $b_n$:
+\begin{eqnarray*}
+b_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)sin(n\,t)dt\\
+&=& \frac{1}{\pi} \bigg[\frac{1}{(n^{2}-1)^{2}}(sin(t)((n^{2}+1)sin(nt) \\
+& & -n(n^{2}-1)xcos(nx))+ cos(t)((n^{2}-1)xsin(nx) + \\
+& &2ncos(nx)))\bigg]\bigg|_{t=-\pi}^{\pi}\\
+&=& 0
+\end{eqnarray*}
+
+De manera que la serie de Fourier de $f(t)$ queda de la siguiente forma:
+\begin{eqnarray*}
+f(t) &=& 1 + \sum_{n=1}^\infty\left(a_n\,cos(n\,t)\right)\\
+a_n &=& \frac{4nsin(\pi n)-2\pi(n^{2}-1)cos(\pi n))}{\pi(n^{2}- 1)^{2}}
+\end{eqnarray*}
+
+Esta progresión puede verse en la Figura~\ref{fig_1b}, en donde a medida que se agrega un término esta sumatoria se aproxima a la señal original (mostrada en azul).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/tsint.png}
+\caption{Señal $f(t) = tsin(t)$}
+\label{fig_1b}
+\end{figure}
+
+
+
 \textbf{3. Desarrollar en series de Fourier}
 
 $$f(t) = t,\; -\pi \leq t \leq \pi$$
@@ -149,6 +210,69 @@ $$f(t) = \begin{cases}
 t, &0 \leq t \leq \pi
 \end{cases}$$
 
+\textbf{R/} Se plantea la serie de fourier de la siguiente manera:
+
+$$f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty\left(a_n\,cos(n\omega_0t) + b_n\,sin(n\omega_0t)\right)$$
+
+Por lo que los coeficientes $a_x$ se pueden definir de la siguiente forma:
+\begin{eqnarray*}
+a_0 &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)dt\\
+a_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)cos(n\omega_0t)dt\\
+b_n &=& \frac{2}{T}\int_{-T/2}^{T/2}f(t)sin(n\omega_0t)dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t) dt + \int_{0}^{\pi}t dt \bigg] \\
+a_n &=&\frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)cos(n\,t) dt + \int_{0}^{\pi}tcos(n\,t) dt \bigg] \\
+b_n &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)sin(n\,t) dt + \int_{0}^{\pi}tsin(n\,t) dt \bigg] 
+\end{eqnarray*}
+
+Resolviendo para $a_0$:
+\begin{eqnarray*}
+a_0 &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t) dt + \int_{0}^{\pi}t dt \bigg]\\
+&=& \frac{1}{\pi} \bigg[ \frac{t^{2}}{2} + \pi x\bigg|_{t=-\pi}^{0} + \frac{t^{2}}{2}\bigg|_{t=0}^{\pi} \bigg] \\
+&=& \frac{1}{\pi} [\frac{\pi^{2}}{2} + \frac{\pi^{2}}{2}]\\
+&=& \pi
+\end{eqnarray*}
+
+Resolviendo para $a_n$:
+\begin{eqnarray*}
+a_n &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)cos(n\,t) dt + \int_{0}^{\pi}tcos(n\,t) dt \bigg] \\
+&=& \frac{1}{\pi} \bigg[ \bigg(\frac{cos(n t)}{n^{2}} + \frac{t sin(n t)}{n} + \frac{\pi sin(n t)}{n}\bigg)\bigg|_{t=-\pi}^{0}\\
+& & \bigg(\frac{cos(nt)}{n^{2}} + \frac{tsin(n t)}{n}\bigg)\bigg|_{t=0}^{\pi} \bigg] \\
+&=& \frac{1}{\pi} \bigg[ \frac{1 - cos(\pi n)}{n^{2}}+ \frac{\pi n sin(\pi n)+ cos(\pi n) -1}{n^{2}} \bigg]\\
+&=& \frac{sin(\pi n)}{n}
+\end{eqnarray*}
+
+Resolviendo para $b_n$:
+\begin{eqnarray*}
+b_n &=&  \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)sin(n\,t) dt + \int_{0}^{\pi}tsin(n\,t) dt \bigg] \\
+&=&  \frac{1}{\pi} \bigg[ \bigg(\frac{sin(n t)}{n^{2}} - \frac{tcos(n t)}{n} - \frac{\pi cos(n t)}{n}\bigg)\bigg|_{t=-\pi}^{0}\\
+& & \bigg(\frac{sin(n t)}{n^{2}} - \frac{tcos(n t)}{n}\bigg)\bigg|_{t=0}^{\pi} \bigg] \\
+&=& \frac{1}{\pi} \bigg[ \frac{sin(\pi n)-\pi n}{n^{2}} + \frac{sin(\pi n)-\pi n cos(\pi n)}{n^{2}} \bigg]\\
+&=& \frac{2sin(\pi n)-\pi n cos(\pi n) - \pi n}{n^{2}}
+\end{eqnarray*}
+
+De manera que la serie de Fourier de $f(t)$ queda de la siguiente forma:
+\begin{eqnarray*}
+f(t) &=& \frac{\pi}{2} + \sum_{n=1}^\infty\left(a_n\,cos(n\,t)+ b_n\,sin(n\omega_0t)\right)\\
+a_n &=&  \frac{sin(\pi n)}{n} \\
+b_n &=&   \frac{2sin(\pi n)-\pi n cos(\pi n) - \pi n}{n^{2}}
+\end{eqnarray*}
+
+Esta progresión puede verse en la Figura~\ref{fig_1d}, en donde a medida que se agrega un término esta sumatoria se aproxima a la señal original (mostrada en azul).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/piece.png}
+\caption{Señal $f(t) = \begin{cases}
+\pi +t, &-\pi \leq t \leq 0\\
+t, &0 \leq t \leq \pi \end{cases}$}
+\label{fig_1d}
+\end{figure}
+
+
 \textbf{5. Hallar el periodo}
 
 \textbf{a)} $f(t) = sin(\frac{2\pi}{b-a}t)$
@@ -193,7 +317,7 @@ T_2 &=& \frac{2\pi}{3}\\
 T_3 &=& \frac{2\pi}{5}
 \end{eqnarray*}
 
-Dado el hecho de que la señal es una señal compuesta, será periodica si el cociente entre sus periodos es un número racional:
+Dado el hecho de que la señal es una señal compuesta, será periódica si el cociente entre sus periodos es un número racional:
 
 \begin{eqnarray*}
 \frac{T_1}{T_2} &=& 3\\
@@ -201,7 +325,7 @@ Dado el hecho de que la señal es una señal compuesta, será periodica si el co
 \frac{T_2}{T_3} &=& \frac{5}{3}
 \end{eqnarray*}
 
-Dado el hecho de que se cumple la condición, la señal es periódica y su periodo será en mínimo común múltiplo de estos periodos:
+Dado el hecho de que se cumple la condición, la señal es periódica y su periodo será el mínimo común múltiplo de estos periodos:
 
 \begin{eqnarray*}
 T &=& m.c.m(T_1,T_2,T_3)\\
@@ -221,4 +345,32 @@ Es evidente en la Figura \ref{fig_5b} que el periodo coincide con el calculado.
 $\,$
 
 \textbf{c)} $f(t) = cos(10t) + cos((10+\pi)t)$
+
+\textbf{R/} El periodo $T$ de la función coseno se puede definir como:
+
+$$f(t) = cos\left(\frac{2\pi}{T}t\right)$$
+
+Por lo que para cada coseno su periodo sería:
+
+\begin{eqnarray*}
+T_1 &=& \frac{\pi}{5}\\
+T_2 &=& \frac{2\pi}{10 + \pi}
+\end{eqnarray*}
+
+Dado el hecho de que la señal es una señal compuesta, será periódica si el cociente entre sus periodos es un número racional:
+
+\begin{eqnarray*}
+\frac{T_1}{T_2} &=& 1 + \frac{\pi}{10}
+\end{eqnarray*}
+
+Dado el hecho de que no se cumple la condición, la señal no es periódica, como se puede observar en la Figura \ref{fig_5c}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/5c.png}
+\caption{Señal $f(t) = cos(10t) + cos((10+\pi)t)$}
+\label{fig_5c}
+\end{figure}
+
+
 \end{document}
