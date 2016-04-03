@@ -110,7 +110,7 @@ a_0 &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)dt\\
 Resolviendo para $a_n$:
 \begin{eqnarray*}
 a_n &=& \frac{1}{\pi}\int_{-\pi}^{\pi}tsin(t)cos(n\,t)dt\\
-&=& \frac{1}{\pi} \bigg(\frac{1}{2}\bigg(-\frac{sin((n-1)t)}{(n-1)^{2}} + \frac{sin((n+1)t)}{(n+1)^{2}}+ \\ 
+&=& \frac{1}{\pi} \bigg(\frac{1}{2}\bigg(-\frac{sin((n-1)t)}{(n-1)^{2}} + \frac{sin((n+1)t)}{(n+1)^{2}}+ \\
 & & \frac{tcos((n-1)t)}{n-1} - \frac{tcos((n+1)t)}{n+1})\bigg)\bigg)\bigg|_{t=-\pi}^{\pi}\\
 &=& \frac{4nsin(\pi n)-2\pi(n^{2}-1)cos(\pi n))}{\pi(n^{2}- 1)^{2}}\\
 \end{eqnarray*}
@@ -239,7 +239,7 @@ Reemplazando por las variables del enunciado se llega a:
 \begin{eqnarray*}
 a_0 &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t) dt + \int_{0}^{\pi}t dt \bigg] \\
 a_n &=&\frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)cos(n\,t) dt + \int_{0}^{\pi}tcos(n\,t) dt \bigg] \\
-b_n &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)sin(n\,t) dt + \int_{0}^{\pi}tsin(n\,t) dt \bigg] 
+b_n &=& \frac{1}{\pi} \bigg[ \int_{-\pi}^{0}(\pi + t)sin(n\,t) dt + \int_{0}^{\pi}tsin(n\,t) dt \bigg]
 \end{eqnarray*}
 
 Resolviendo para $a_0$:
@@ -280,9 +280,7 @@ Esta progresión puede verse en la Figura~\ref{fig_1d}, en donde a medida que se
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{imgs/piece.png}
-\caption{Señal $f(t) = \begin{cases}
-\pi +t, &-\pi \leq t \leq 0\\
-t, &0 \leq t \leq \pi \end{cases}$}
+\caption{Señal $f(t) = \{ \pi +t, t \}$}
 \label{fig_1d}
 \end{figure}
 
