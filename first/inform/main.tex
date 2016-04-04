@@ -261,7 +261,36 @@ Se desea ser capaz de escuchar los colores. Para esto se construye una sinusoide
 Dado que el espectro audible del humano se encuentra entre 20Hz y 20kHz \cite{rosen}, las frecuencias exceden la capacidad auditiva, por lo que a manera académica se toman en vez de THz como Hz y de esta manera ya se encuentran el rango audible.
 
 \subsection{Interpolación}
-TODO
+
+El objetivo de esta sección es observar la diferencia que existe entre dos métodos de interpolación: lineal y polinomial por polinomios de Lagrange. Para esto trabajamos sobre una señal sinusoidal y por medio de la interfaz gráfica podemos definir la frecuencia de muestreo de los puntos que vamos a interpolar.
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/inter2.png}
+\caption{Interpolación: Frecuencia de muestreo de $2*f$, $f=$frecuencia original}
+\label{fig_inter_2}
+\end{figure}
+
+En la gráfica \ref{fig_inter_2} podemos observar la interpolación realizada de manera lineal (linea punteada) y polinomial (linea de puntos) tomando una frecuencia de muestreo de 2 veces la frecuencia original
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/inter3.png}
+\caption{Interpolación: Frecuencia de muestreo de $3*f$, $f=$frecuencia original}
+\label{fig_inter_3}
+\end{figure}
+
+De igual manera en las gráficas \ref{fig_inter_3} y \ref{fig_inter_5}, podemos apreciar como se van acercando las interpolaciones a la señal original, a medida que aumentamos la frecuencia de muestreo.
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{imgs/inter5.png}
+\caption{Interpolación: Frecuencia de muestreo de $5*f$, $f=$frecuencia original}
+\label{fig_inter_5}
+\end{figure}
 
 \section{Análisis de resultados}
 \subsection{Aliasing}
@@ -269,14 +298,17 @@ Como se esperaba se ve que en las frecuencias mayores a la frecuencia de Nyquist
 
 También es visible que para el caso de la señal con frecuencia de muestreo de 1.25 (Figura~\ref{fig_al_25}), la frecuencia resultante para la señal generada es de 0.25Hz, situación que se repite con la señal con frecuencia de muestreo de 1.125 (Figura~\ref{fig_al_125}), la cual tiene una frecuencia resultante de 0.125Hz.
 
-\subsection{Grabar voz}
+\subsection{Voz}
 Al aumentar la frecuencia de muestreo en la grabación de voz se puede escuchar la grabación más grave y lenta, mientras que al disminuirla de escucha la grabación más aguda y rápida. Este efecto también se presenta al cambiar la frecuencia de muestreo en la reproducción, pero se presenta de manera contraria, ya que al aumentar la frecuencia se escucha la grabación más aguda y al disminuirla se escucha más grave.
+
+Se realizo el experimento de grabar un palindromo y observar su representación en tiempo y frecuencia, y se pudo observar que la representación en frecuencia es la misma para la señal original y la señal invertida.
 
 \subsection{Escuchar colores}
 Las frecuencias de los colores, como se encuentran fuera del rango audible, al generar una señal senoidal con esta frecuencia es imposible poder escucharla, pero al realizar el cambio unidades de THz a Hz, se pueden ya escuchar las diferentes tonalidades de colores.
 
 \subsection{Interpolación}
-TODO
+
+Cuando se aumenta la frecuencia de muestreo es decir cuando se poseen mas puntos para realizar la interpolación, esta se aproxima más a la señal original pero como podemos observar en la figura \ref{fig_inter_2}, la interpolación polinomial da una aproximación mas exacta que la lineal, dependiendo del grado del polinomio de Lagrange mejor es la aproximación de la misma, como se puede ver en la figura \ref{fig_inter_5} donde se utiliza un polinomio de grado mayor, el error de la interpolación con respecto a la señal original es cercano a cero.
 
 \section{Conclusiones}
 \begin{itemize}
@@ -284,6 +316,7 @@ TODO
     \item Los dispositivos de computo, al ser elementos discretos, obligan a usar el teorema del muestreo, ya que al no usarse, puede presentarse el aliasing y con esto no solo hay perdida de información si no que pueden haber datos erroneos.
     \item Al cambiar la frecuencia de muestreo en grabación de voz se genera un fenómeno de aliasing, sonando más grave o más aguda.
     \item Aunque los colores también son señales, el contenido de frecuencia de estas señales se encuentran fuera de la capacidad auditiva del ser humano.
+    \item Se debe utilizar un grado apropiado para realizar interpolación polinomial o una cantidad suficiente de datos para poder realizar una interpolación lineal que sea fiel a la señal original.
 \end{itemize}
 
 \ifCLASSOPTIONcaptionsoff
