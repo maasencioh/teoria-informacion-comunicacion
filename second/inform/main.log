@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2016 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2016 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -432,65 +432,105 @@ Overfull \hbox (23.44499pt too wide) in paragraph at lines 72--73
  [][] 
  []
 
-[2 <./imgs/sqrt.png>] <imgs/lin.png, id=22, 674.52pt x 607.26875pt>
-File: imgs/lin.png Graphic file (type png)
- <use imgs/lin.png>
-Package pdftex.def Info: imgs/lin.png used on input line 138.
-(pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
+
+Overfull \hbox (13.6531pt too wide) in alignment at lines 103--108
+ [][][] []
+ []
+
+[2 <./imgs/sqrt.png>] <imgs/tsint.png, id=22, 422.32782pt x 316.18124pt>
+File: imgs/tsint.png Graphic file (type png)
+ <use imgs/tsint.png>
+Package pdftex.def Info: imgs/tsint.png used on input line 138.
+(pdftex.def)             Requested size: 252.94499pt x 189.37248pt.
 
 Overfull \hbox (23.44499pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-<imgs/ba4_2.png, id=23, 674.52pt x 607.26875pt>
+[3 <./imgs/tsint.png (PNG copy)>] <imgs/lin.png, id=26, 674.52pt x 607.26875pt>
+File: imgs/lin.png Graphic file (type png)
+ <use imgs/lin.png>
+Package pdftex.def Info: imgs/lin.png used on input line 213.
+(pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
+
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+[4 <./imgs/lin.png>]
+Overfull \hbox (5.1488pt too wide) in alignment at lines 254--260
+ [][][] []
+ []
+
+<imgs/piece.png, id=31, 422.32782pt x 316.18124pt>
+File: imgs/piece.png Graphic file (type png)
+ <use imgs/piece.png>
+Package pdftex.def Info: imgs/piece.png used on input line 282.
+(pdftex.def)             Requested size: 252.94499pt x 189.37248pt.
+
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 282--283
+ [][] 
+ []
+
+[5 <./imgs/piece.png (PNG copy)>] <imgs/ba4_2.png, id=35, 674.52pt x 607.26875pt>
 File: imgs/ba4_2.png Graphic file (type png)
  <use imgs/ba4_2.png>
-Package pdftex.def Info: imgs/ba4_2.png used on input line 168.
+Package pdftex.def Info: imgs/ba4_2.png used on input line 320.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 168--169
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 320--321
  [][] 
  []
 
-<imgs/ba5_2.png, id=24, 674.52pt x 607.26875pt>
+<imgs/ba5_2.png, id=36, 674.52pt x 607.26875pt>
 File: imgs/ba5_2.png Graphic file (type png)
  <use imgs/ba5_2.png>
-Package pdftex.def Info: imgs/ba5_2.png used on input line 175.
+Package pdftex.def Info: imgs/ba5_2.png used on input line 327.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 175--176
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 327--328
  [][] 
  []
 
-[3 <./imgs/lin.png> <./imgs/ba4_2.png>] <imgs/5b.png, id=30, 674.52pt x 607.26875pt>
+[6 <./imgs/ba4_2.png> <./imgs/ba5_2.png>] <imgs/5b.png, id=42, 674.52pt x 607.26875pt>
 File: imgs/5b.png Graphic file (type png)
  <use imgs/5b.png>
-Package pdftex.def Info: imgs/5b.png used on input line 216.
+Package pdftex.def Info: imgs/5b.png used on input line 368.
 (pdftex.def)             Requested size: 252.94499pt x 227.72522pt.
 
-Overfull \hbox (23.44499pt too wide) in paragraph at lines 216--217
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 368--369
  [][] 
  []
 
-[4 <./imgs/ba5_2.png> <./imgs/5b.png>] (./main.aux
+<imgs/5c.png, id=43, 422.32782pt x 316.18124pt>
+File: imgs/5c.png Graphic file (type png)
+ <use imgs/5c.png>
+Package pdftex.def Info: imgs/5c.png used on input line 398.
+(pdftex.def)             Requested size: 252.94499pt x 189.37248pt.
+
+Overfull \hbox (23.44499pt too wide) in paragraph at lines 398--399
+ [][] 
+ []
+
+[7 <./imgs/5b.png> <./imgs/5c.png (PNG copy)>] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 3195 strings out of 493089
- 41665 string characters out of 6134842
- 119944 words of memory out of 5000000
- 6638 multiletter control sequences out of 15000+600000
+ 3215 strings out of 493089
+ 41956 string characters out of 6134842
+ 127915 words of memory out of 5000000
+ 6655 multiletter control sequences out of 15000+600000
  8111 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,30p,232b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (4 pages, 243439 bytes).
+Output written on main.pdf (7 pages, 280153 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

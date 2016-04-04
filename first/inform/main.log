@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 MAR 2016 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2016 23:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -372,7 +372,29 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count112
+\lst@gtempboxa=\box27
+\lst@token=\toks19
+\lst@length=\count113
+\lst@currlwidth=\dimen120
+\lst@column=\count114
+\lst@pos=\count115
+\lst@lostspace=\dimen121
+\lst@width=\dimen122
+\lst@newlines=\count116
+\lst@lineno=\count117
+\lst@maxwidth=\dimen123
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box28
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
 
 LaTeX Warning: Unused global option(s):
     [comsoc].
@@ -385,31 +407,31 @@ LaTeX Info: Redefining \% on input line 16.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen120
-\scratchbox=\box27
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen121
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count120
+\scratchdimen=\dimen124
+\scratchbox=\box29
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen125
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -446,74 +468,98 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+\c@lstlisting=\count126
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+(Font)              <5> on input line 46.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] <imgs/aliasing_1.png, id=13, 564.1075pt x 443.6575pt>
 File: imgs/aliasing_1.png Graphic file (type png)
  <use imgs/aliasing_1.png>
-Package pdftex.def Info: imgs/aliasing_1.png used on input line 116.
+Package pdftex.def Info: imgs/aliasing_1.png used on input line 117.
 (pdftex.def)             Requested size: 252.94499pt x 198.93321pt.
  <imgs/aliasing_25.png, id=15, 564.1075pt x 443.6575pt>
 File: imgs/aliasing_25.png Graphic file (type png)
  <use imgs/aliasing_25.png>
-Package pdftex.def Info: imgs/aliasing_25.png used on input line 123.
+Package pdftex.def Info: imgs/aliasing_25.png used on input line 124.
 (pdftex.def)             Requested size: 252.94499pt x 198.93321pt.
 
 <imgs/aliasing_125.png, id=16, 564.1075pt x 443.6575pt>
 File: imgs/aliasing_125.png Graphic file (type png)
  <use imgs/aliasing_125.png>
-Package pdftex.def Info: imgs/aliasing_125.png used on input line 130.
+Package pdftex.def Info: imgs/aliasing_125.png used on input line 131.
 (pdftex.def)             Requested size: 252.94499pt x 198.93321pt.
  <imgs/aliasing_4.png, id=17, 564.1075pt x 443.6575pt>
 File: imgs/aliasing_4.png Graphic file (type png)
  <use imgs/aliasing_4.png>
-Package pdftex.def Info: imgs/aliasing_4.png used on input line 137.
+Package pdftex.def Info: imgs/aliasing_4.png used on input line 138.
 (pdftex.def)             Requested size: 252.94499pt x 198.93321pt.
  <imgs/aliasing_8.png, id=18, 564.1075pt x 443.6575pt>
 File: imgs/aliasing_8.png Graphic file (type png)
  <use imgs/aliasing_8.png>
-Package pdftex.def Info: imgs/aliasing_8.png used on input line 144.
+Package pdftex.def Info: imgs/aliasing_8.png used on input line 145.
 (pdftex.def)             Requested size: 252.94499pt x 198.93321pt.
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
- [2 <./imgs/aliasing_1.png>]
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+ [2 <./imgs/aliasing_1.png>] (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
  [3 <./imgs/aliasing_25.png> <./imgs/aliasing_125.png> <./imgs/aliasing_4.png> <./imgs/aliasing_8.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 184.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
+ <imgs/voz_1.png, id=35, 423.83344pt x 279.29344pt>
+File: imgs/voz_1.png Graphic file (type png)
+ <use imgs/voz_1.png>
+Package pdftex.def Info: imgs/voz_1.png used on input line 191.
+(pdftex.def)             Requested size: 252.94499pt x 166.6824pt.
+ <imgs/voz_2.png, id=36, 471.26062pt x 306.39468pt>
+File: imgs/voz_2.png Graphic file (type png)
+ <use imgs/voz_2.png>
+Package pdftex.def Info: imgs/voz_2.png used on input line 198.
+(pdftex.def)             Requested size: 252.94499pt x 164.45485pt.
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
+ [4 <./imgs/voz_1.png> <./imgs/voz_2.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 217.
+(Font)              <8> on input line 268.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 217.
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
- [4] (./main.aux
+(Font)              <6> on input line 268.
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
+ [5
+
+] (./main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
 ) ) 
 Here is how much of TeX's memory you used:
- 3472 strings out of 493089
- 51456 string characters out of 6134842
- 126694 words of memory out of 5000000
- 6908 multiletter control sequences out of 15000+600000
- 39217 words of font info for 73 fonts, out of 8000000 for 9000
+ 5719 strings out of 493089
+ 80103 string characters out of 6134842
+ 184675 words of memory out of 5000000
+ 9133 multiletter control sequences out of 15000+600000
+ 40324 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,7n,30p,795b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,42p,795b,1744s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 238979 bytes).
+Output written on main.pdf (5 pages, 262489 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

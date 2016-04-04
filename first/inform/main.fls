@@ -1,4 +1,4 @@
-PWD /Users/maasencioh/Documents/unal/teoria_informacion/primer
+PWD /Users/maasencioh/Documents/unal/teoria_informacion/teoria-informacion-comunicacion/first/inform
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -86,6 +86,12 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
@@ -146,6 +152,18 @@ INPUT imgs/aliasing_8.png
 INPUT ./imgs/aliasing_8.png
 INPUT ./imgs/aliasing_8.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT imgs/voz_1.png
+INPUT ./imgs/voz_1.png
+INPUT ./imgs/voz_1.png
+INPUT imgs/voz_2.png
+INPUT ./imgs/voz_2.png
+INPUT ./imgs/voz_2.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
