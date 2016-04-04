@@ -16,7 +16,7 @@ hold on
 plot(t,y,'b-','LineWidth',3);
 
 for n = 1:10
-    a = a + ( ((sin(pi*n)/n)*cos(n*t)) + (2*sin(pi*n)-pi*n*cos(n*pi)-pi*n)/(n^2)*sin(n*t));
+    a = a + ( ((sin(pi*n)/n)*cos(n*t)) + ((2*sin(pi*n)-pi*n*cos(n*pi)-pi*n)/(pi*(n^2)))*sin(n*t));
     plot(t,a,'k-');
 end
 
