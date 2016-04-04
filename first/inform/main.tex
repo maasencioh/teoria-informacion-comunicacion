@@ -66,6 +66,35 @@ La digitalización o conversión A/D, básicamente, consiste en realizar de form
 \subsection{Interpolación}
 En el subcampo matemático del análisis numérico, se denomina interpolación a la obtención de nuevos puntos partiendo del conocimiento de un conjunto discreto de puntos o la aproximación de una función de calculo costoso por una más sencilla \cite{crochiere}.
 
+\subsubsection{Lineal}
+
+La idea básica es conectar los 2 puntos dados en $x_i$, es decir $(x_0, y_0)$ y $(x_1, y_1)$. La función interpolante es una linea recta entre los dos puntos. Para cualquier punto entre los dos valores de $x_0$ y $x_1$ se debe seguir la ecuación de la linea
+
+$$\frac{y - x_0}{y_1 - y_0} = \frac{x - x_0}{x_1 - x_0}$$
+que se puede derivar geométricamente.
+
+En lo anterior, el único valor desconocido es y, que representa el valor desconocido para x, despejando queda:
+
+$$y = y_0 + (x - x_0) \frac{y1 - y0}{x1 - x0}$$
+, 
+donde se asume que $x_0 < x < x_1$.
+
+Si se tienen más de dos puntos para la interpolación, es decir $N > 2$, con
+puntos $x_0, x_1,..., x_N$ , simplemente se concatena la interpolación lineal entre pares de puntos continuos \cite{interp}.
+
+\subsubsection{Polinomios de Lagrange}
+
+La interpolación polinomial de Lagrange es el polinomio $P(x)$ de grado $\leq (n-1)$ que pasa por los $n$ puntos $(x_1, y_1 = f(x_1)), (x_2, y_2 = f(x_2)), ... , (x_n, y_n = f(x_n))$ y es dado por:
+
+$$P(x) =\sum_{j=1}^{n} P_j(x)$$
+
+donde
+
+$$P_j(x) = y_j \prod_{k=1 , k \neq j}^{n} \frac{x-x_k}{x_j - x_k}$$
+
+La formula fue primero publicada por Waring(1779), redescubierta por Euler en 1783 y publicada por Lagrange en 1975 \cite{lagr}.
+
+
 \subsection{Aliasing}
 Es el efecto que causa que señales continuas distintas se tornen indistinguibles cuando se muestrean digitalmente. Cuando esto sucede, la señal original no puede ser reconstruida de forma unívoca a partir de la señal digital. Una imagen limitada en banda y muestreada por debajo de su frecuencia de Nyquist en las direcciones ``x'' e ``y'', resulta en una superposición de las replicaciones periódicas del espectro $G(f_x, f_y)$. Este fenómeno de superposición periódica sucesiva es lo que se conoce como aliasing o Efecto Nyquist.
 
@@ -229,16 +258,16 @@ Se desea ser capaz de escuchar los colores. Para esto se construye una sinusoide
     \end{tabular}
 \end{table}
 
-Dado que el espectro audible del humano se encuentra entre 20Hz y 20kHz \cite{rosen}, las frecuencias exeden la capacidad auditiva, por lo que a manera académica se toman en vez de THz como Hz y de esta manera ya se encuentran el rango audible.
+Dado que el espectro audible del humano se encuentra entre 20Hz y 20kHz \cite{rosen}, las frecuencias exceden la capacidad auditiva, por lo que a manera académica se toman en vez de THz como Hz y de esta manera ya se encuentran el rango audible.
 
 \subsection{Interpolación}
 TODO
 
 \section{Análisis de resultados}
 \subsection{Aliasing}
-Como se esperaba se ve que en las frecuencias mayores a la frecuencia de Nyquist (Figuras \ref{fig_al_4} y \ref{fig_al_8}) la señal se asemeja a la señal original, mientras que para las frecuencias menores (Figuras \ref{fig_al_1}, \ref{fig_al_25} y \ref{fig_al_125}) la señal resultante difiere de la señal original, presentandose el fenómeno de aliasing.
+Como se esperaba se ve que en las frecuencias mayores a la frecuencia de Nyquist (Figuras \ref{fig_al_4} y \ref{fig_al_8}) la señal se asemeja a la señal original, mientras que para las frecuencias menores (Figuras \ref{fig_al_1}, \ref{fig_al_25} y \ref{fig_al_125}) la señal resultante difiere de la señal original, presentándose el fenómeno de aliasing.
 
-Tambien es visible que para el caso de la señal con frecuencia de muestreo de 1.25 (Figura~\ref{fig_al_25}), la frecuencia resultante para la señal generada es de 0.25Hz, situación que se repite con la señal con frecuencia de muestreo de 1.125 (Figura~\ref{fig_al_125}), la cual tiene una frecuencia resultante de 0.125Hz.
+También es visible que para el caso de la señal con frecuencia de muestreo de 1.25 (Figura~\ref{fig_al_25}), la frecuencia resultante para la señal generada es de 0.25Hz, situación que se repite con la señal con frecuencia de muestreo de 1.125 (Figura~\ref{fig_al_125}), la cual tiene una frecuencia resultante de 0.125Hz.
 
 \subsection{Grabar voz}
 Al aumentar la frecuencia de muestreo en la grabación de voz se puede escuchar la grabación más grave y lenta, mientras que al disminuirla de escucha la grabación más aguda y rápida. Este efecto también se presenta al cambiar la frecuencia de muestreo en la reproducción, pero se presenta de manera contraria, ya que al aumentar la frecuencia se escucha la grabación más aguda y al disminuirla se escucha más grave.
@@ -287,6 +316,14 @@ Craig F. Bohren (2006). Fundamentals of Atmospheric Radiation: An Introduction w
 
 \bibitem{rosen}
 Rosen, Stuart (2011). Signals and Systems for Speech and Hearing (2nd ed.). BRILL. p. 163. For auditory signals and human listeners, the accepted range is 20Hz to 20kHz, the limits of human hearing
+
+\bibitem{interp}
+Capítulo 4. Interpolación,
+\url{http://wwwprof.uniandes.edu.co/~gprieto/classes/compufis/interpolacion.pdf}
+
+\bibitem{lagr}
+Lagrange Interpolating Polynomial,
+\url{http://mathworld.wolfram.com/LagrangeInterpolatingPolynomial.html}
 
 \end{thebibliography}
 \end{document}
