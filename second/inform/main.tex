@@ -74,7 +74,19 @@ Esta progresión puede verse en la Figura~\ref{fig_1}, en donde a medida que se 
 \label{fig_1}
 \end{figure}
 
-$\,$
+Los primeros cinco armónicos de esta serie son:
+
+\begin{eqnarray*}
+A_1 &=& \frac{\pi^2}{3} - 4\cos{(t)} \\
+A_2 &=& \frac{\pi^2}{3} + \cos{(2t)} \\
+A_3 &=& \frac{\pi^2}{3} - \frac{4}{9}\cos{(3t)} \\
+A_4 &=& \frac{\pi^2}{3} + \frac{1}{4}\cos{(4t)} \\
+A_5 &=& \frac{\pi^2}{3} - \frac{4}{25}\cos{(5t)}
+\end{eqnarray*}
+
+La serie se puede expresar como:
+
+$$f(t) = \frac{\pi^2}{3} + 4 \sum_{n=1}^\infty\left(\frac{(-1)^n}{n^2}\cos{(n\,t)}\right)$$
 
 \textbf{2. Desarrollar en series de Fourier}
 
@@ -154,7 +166,6 @@ La serie se puede expresar como:
 
 $$f(t) = 1 - \frac{cos(t)}{2} + \sum_{n=2}^\infty\left( \frac{2(-1)^{n+1}}{n^2 - 1} \,cos(n t) \right)$$
 
-
 \textbf{3. Desarrollar en series de Fourier}
 
 $$f(t) = t,\; -\pi \leq t \leq \pi$$
@@ -215,7 +226,19 @@ Esta progresión puede verse en la Figura~\ref{fig_3}, en donde a medida que se 
 \label{fig_3}
 \end{figure}
 
-$\,$
+Los primeros cinco armónicos de esta serie son:
+
+\begin{eqnarray*}
+A_1 &=& - 2\sin{(t)} \\
+A_2 &=& \sin{(2t)} \\
+A_3 &=& - \frac{2}{3}\sin{(3t)} \\
+A_4 &=& \frac{1}{2}\sin{(4t)} \\
+A_5 &=& - \frac{2}{5}\sin{(5t)}
+\end{eqnarray*}
+
+La serie se puede expresar como:
+
+$$f(t) = 2 \sum_{n=1}^\infty\left(\frac{(-1)^n}{n}\sin{(n\,t)}\right)$$
 
 \textbf{4. Desarrollar en series de Fourier}
 
@@ -299,7 +322,7 @@ Teniendo en cuenta que los armónicos nulos como los impares( $A_1 , A_3,..., A_
 
 $$f(t) = \frac{\pi}{2} + \sum_{n=1}^\infty\left( \frac{ -1 \,}{n} \,sin(2 n t) \right)$$
 
-
+$\,$
 
 \textbf{5. Hallar el periodo}
 
