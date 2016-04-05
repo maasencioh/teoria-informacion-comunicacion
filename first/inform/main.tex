@@ -76,7 +76,7 @@ que se puede derivar geométricamente.
 En lo anterior, el único valor desconocido es y, que representa el valor desconocido para x, despejando queda:
 
 $$y = y_0 + (x - x_0) \frac{y1 - y0}{x1 - x0}$$
-, 
+,
 donde se asume que $x_0 < x < x_1$.
 
 Si se tienen más de dos puntos para la interpolación, es decir $N > 2$, con
@@ -177,7 +177,7 @@ Para lograr esto se realizan varios experimentos, midiendo con frecuencia de 1 (
 \end{figure}
 
 \subsection{Voz}
-En esta sección se realizan diferentes experimentos sobre la voz para poder observar aspectos como: su representación en frecuencia y en tiempo. La interfaz gráfica desarrollada para este fin se puede observar en la figura \ref{voz_1} . 
+En esta sección se realizan diferentes experimentos sobre la voz para poder observar aspectos como: su representación en frecuencia y en tiempo. La interfaz gráfica desarrollada para este fin se puede observar en la figura \ref{voz_1} .
 
 \subsubsection{Grabar voz}
 
@@ -190,10 +190,10 @@ recordblocking(recObj, 5);
 
 \subsubsection{Reproducir voz}
 
-Para reproducir la voz grabada, primero se debe obtener una la información del  audio con la función  getaudiodata(), y luego esta se pasa como argumento a sound() que es la encargada de reproducir los sonidos junto con la frecuencia a la que se quiere reproducir el audio, en este caso este valor se define en la interfaz gráfica. 
+Para reproducir la voz grabada, primero se debe obtener una la información del  audio con la función  getaudiodata(), y luego esta se pasa como argumento a sound() que es la encargada de reproducir los sonidos junto con la frecuencia a la que se quiere reproducir el audio, en este caso este valor se define en la interfaz gráfica.
 
 \begin{lstlisting}[caption={Reproducir sonido},label={matlab_playsound},language=Matlab]
-	y = getaudiodata(recObj);    
+	y = getaudiodata(recObj);
     sound(y, Fs);
 \end{lstlisting}
 
@@ -268,7 +268,7 @@ El objetivo de esta sección es observar la diferencia que existe entre dos mét
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{imgs/inter2.png}
-\caption{Interpolación: Frecuencia de muestreo de $2*f$, $f=$frecuencia original}
+\caption{Interpolación: Frecuencia de muestreo de $2f$}
 \label{fig_inter_2}
 \end{figure}
 
@@ -278,7 +278,7 @@ En la gráfica \ref{fig_inter_2} podemos observar la interpolación realizada de
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{imgs/inter3.png}
-\caption{Interpolación: Frecuencia de muestreo de $3*f$, $f=$frecuencia original}
+\caption{Interpolación: Frecuencia de muestreo de $3f$}
 \label{fig_inter_3}
 \end{figure}
 
@@ -288,7 +288,7 @@ De igual manera en las gráficas \ref{fig_inter_3} y \ref{fig_inter_5}, podemos 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{imgs/inter5.png}
-\caption{Interpolación: Frecuencia de muestreo de $5*f$, $f=$frecuencia original}
+\caption{Interpolación: Frecuencia de muestreo de $5f$}
 \label{fig_inter_5}
 \end{figure}
 
