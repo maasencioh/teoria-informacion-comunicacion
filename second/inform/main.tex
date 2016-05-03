@@ -155,6 +155,25 @@ La serie se puede expresar como:
 $$f(t) = 1 - \frac{cos(t)}{2} + \sum_{n=2}^\infty\left( \frac{2(-1)^{n+1}}{n^2 - 1} \,cos(n t) \right)$$
 
 
+Utilizando la forma compleja de la serie de Fourier:
+
+
+$$f(t) =  \sum_{n=-\infty}^\infty c_n e^{jn\omega_0t} $$
+
+
+Por lo que el coeficiente $c_n$ se puede definir de la siguiente forma:
+\begin{eqnarray*}
+c_n &=& \frac{1}{T}\int_{-T/2}^{T/2}f(t)e^{-jn\omega_0t}dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+
+\begin{eqnarray*}
+c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}tsin(t)e^{-jn\omega_0t}dt
+\end{eqnarray*}
+
+
+
 \textbf{3. Desarrollar en series de Fourier}
 
 $$f(t) = t,\; -\pi \leq t \leq \pi$$
