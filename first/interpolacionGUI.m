@@ -27,10 +27,10 @@ set(hinputtext,'Units','normalized');
 frec = 1;  % Hz
 N = 100;
 T = 1/frec;
-tmin = 0;
-tmax = 2*T;
+tmin = 0.1;
+tmax = 4*T;
 t = linspace(tmin, tmax, N);
-ya = sin(2*pi*frec * t);
+ya = sin(2*pi*frec * t)/t;
 plot(t,ya);
 xlabel('t (seconds)');
 grid
@@ -60,13 +60,13 @@ set(f,'Visible','on');
         T = 1/Fs;
         nmin = ceil(tmin / T);
         nmax = floor(tmax / T);
-        xi = 0:0.01:2;
-        N = nmax-nmin
+        xi = 0.1:0.01:4;
+        N = 5
         x = linspace(tmin, tmax, N);
-        y = sin(2*pi*frec * x);
+        y = sin(2*pi*frec * x)/x;
         
-        n = length(x) - 1;
-        ni = length(xi);
+        n = length(x) - 1
+        ni = length(xi)
         L = ones(ni,n+1); 
         
         for j = 1 : (n+1)

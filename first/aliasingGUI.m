@@ -27,7 +27,7 @@ T = 1/frec;
 tmin = 0;
 tmax = 4*T;
 t = linspace(tmin, tmax, N);
-ya = sin(2*pi*frec * t);
+ya = cos(2*pi*frec * t);
 plot(t,ya);
 xlabel('t (seconds)');
 grid
@@ -44,10 +44,11 @@ set(f,'Visible','on');
         nmin = ceil(tmin / T);
         nmax = floor(tmax / T);
         n = nmin:nmax;
-        x1 = sin(2*pi*frec * n*T);
+        x1 = cos(2*pi*t);
         plot(t,ya,'b-');
         hold on
-        plot(n*T,x1,'r-')
+        %plot(n*T,x1,'r-')
+        plot(t,x1,'r-')
         hold off
         grid
     end
