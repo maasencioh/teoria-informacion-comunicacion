@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[a4paper]{article}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage[spanish]{babel}
@@ -109,6 +109,13 @@ Resolviendo para $c_n$:
 c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}t^2e^{-jnt}dt\\
 &=& \frac{e^{-jnt}(2nt+jn^2t^2-2j)}{2\pi n^3}\bigg|_{t=-\pi}^{\pi}\\
 &=& \frac{(\pi^2n^2-2)\sin(\pi n) + \pi n\cos(\pi n)}{\pi n^3}
+\end{eqnarray*}
+
+Reemplazando el la formula:
+
+\begin{eqnarray*}
+f(t) &=&  \sum_{n=-\infty}^\infty c_n e^{jn\omega_0t} \\
+f(t) &=&  \sum_{n=-\infty}^\infty \frac{(\pi^2n^2-2)\sin(\pi n) + \pi n\cos(\pi n)}{\pi n^3} e^{jnt}
 \end{eqnarray*}
 
 \textbf{2. Desarrollar en series de Fourier}
@@ -320,6 +327,13 @@ Resolviendo para $c_n$:
 c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}te^{-jnt}dt\\
 &=& \frac{e^{-jnt}(1+jnt)}{2\pi n^2}\bigg|_{t=-\pi}^{\pi}\\
 &=& \frac{j(\pi n\cos(\pi n) - \sin(\pi n))}{\pi n^2}
+\end{eqnarray*}
+
+Reemplazando el la formula:
+
+\begin{eqnarray*}
+f(t) &=&  \sum_{n=-\infty}^\infty c_n e^{jn\omega_0t} \\
+f(t) &=&  \sum_{n=-\infty}^\infty \frac{j(\pi n\cos(\pi n) - \sin(\pi n))}{\pi n^2} e^{jnt}
 \end{eqnarray*}
 
 \textbf{4. Desarrollar en series de Fourier}
