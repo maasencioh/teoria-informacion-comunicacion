@@ -1,9 +1,10 @@
-\documentclass[twocolumn]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=1in, left=1.1811in, right=1.1811in]{geometry}
 \usepackage{amsmath}
 
 \title{Tarea 2}
@@ -87,6 +88,28 @@ A_5 &=& \frac{\pi^2}{3} - \frac{4}{25}\cos{(5t)}
 La serie se puede expresar como:
 
 $$f(t) = \frac{\pi^2}{3} + 4 \sum_{n=1}^\infty\left(\frac{(-1)^n}{n^2}\cos{(n\,t)}\right)$$
+
+Utilizando la forma compleja de la serie de Fourier:
+
+$$f(t) =  \sum_{n=-\infty}^\infty c_n e^{jn\omega_0t} $$
+
+Por lo que el coeficiente $c_n$ se puede definir de la siguiente forma:
+\begin{eqnarray*}
+c_n &=& \frac{1}{T}\int_{-T/2}^{T/2}f(t)e^{-jn\omega_0t}dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+
+\begin{eqnarray*}
+c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}t^2e^{-jnt}dt
+\end{eqnarray*}
+
+Resolviendo para $c_n$:
+\begin{eqnarray*}
+c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}t^2e^{-jnt}dt\\
+&=& \frac{e^{-jnt}(2nt+jn^2t^2-2j)}{2\pi n^3}\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{(\pi^2n^2-2)\sin(\pi n) + \pi n\cos(\pi n)}{\pi n^3}
+\end{eqnarray*}
 
 \textbf{2. Desarrollar en series de Fourier}
 
@@ -199,7 +222,7 @@ A_{-2} &=& \frac{-1}{3} e^{-2 j t} \\
 A_{-1} &=& \frac{-1}{4} e^{-1 j t} \\
 A_0 &=& 1 \\
 A_1 &=& \frac{-1}{4} e^{1 j t}\\
-A_2 &=& \frac{-1}{3} e^{2 j t} 
+A_2 &=& \frac{-1}{3} e^{2 j t}
 \end{eqnarray*}
 
 
@@ -276,6 +299,28 @@ A_5 &=& - \frac{2}{5}\sin{(5t)}
 La serie se puede expresar como:
 
 $$f(t) = 2 \sum_{n=1}^\infty\left(\frac{(-1)^n}{n}\sin{(n\,t)}\right)$$
+
+Utilizando la forma compleja de la serie de Fourier:
+
+$$f(t) =  \sum_{n=-\infty}^\infty c_n e^{jn\omega_0t} $$
+
+Por lo que el coeficiente $c_n$ se puede definir de la siguiente forma:
+\begin{eqnarray*}
+c_n &=& \frac{1}{T}\int_{-T/2}^{T/2}f(t)e^{-jn\omega_0t}dt
+\end{eqnarray*}
+
+Reemplazando por las variables del enunciado se llega a:
+
+\begin{eqnarray*}
+c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}te^{-jnt}dt
+\end{eqnarray*}
+
+Resolviendo para $c_n$:
+\begin{eqnarray*}
+c_n &=& \frac{1}{2\pi}\int_{-\pi}^{\pi}te^{-jnt}dt\\
+&=& \frac{e^{-jnt}(1+jnt)}{2\pi n^2}\bigg|_{t=-\pi}^{\pi}\\
+&=& \frac{j(\pi n\cos(\pi n) - \sin(\pi n))}{\pi n^2}
+\end{eqnarray*}
 
 \textbf{4. Desarrollar en series de Fourier}
 
